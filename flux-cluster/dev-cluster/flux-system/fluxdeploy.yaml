@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
         - name: deploypodspract28flux
-          image: httpd:2.4.41-alpine
+          image: busybox
             
