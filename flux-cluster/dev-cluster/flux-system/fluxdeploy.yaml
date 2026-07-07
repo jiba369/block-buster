@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind : Deployment 
+metadata :
+  name: pract28flux
+  namespace: wave2
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      pract28: "true"
+  template:
+    metadata:
+      labels:
+        pract28: "true"
+    spec:
+      containers:
+        - name: deploypodspract28flux
+          image: httpd:2.4.41-alpine
+            
