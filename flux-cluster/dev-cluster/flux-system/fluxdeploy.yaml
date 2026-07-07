@@ -4,7 +4,7 @@ metadata :
   name: pract28flux
   namespace: wave2
 spec:
-  replicas: 5
+  replicas: 10
   selector:
     matchLabels:
       pract28: "true"
