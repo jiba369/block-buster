@@ -16,4 +16,11 @@ spec:
       containers:
         - name: deploypodspract28flux
           image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - >
+              sleep 40;
+              touch /tmp/live;
+              while true; do sleep 100; done;          
+
             
